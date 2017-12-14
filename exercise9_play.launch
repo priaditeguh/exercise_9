@@ -1,0 +1,15 @@
+<launch>
+	<node
+		pkg="exercise_4"
+		type="exercise_4_vel_printer"
+		name="subscribe_velocity"
+		output="screen"
+		launch-prefix="xterm -e"
+	/>
+	<node
+		pkg="rosbag"
+		name="play"
+		type="play"
+		args="exercise_9.bag"
+	/>
+</launch>
